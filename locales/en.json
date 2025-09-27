@@ -1,0 +1,21 @@
+{
+    "spawn": "Spawn",
+    "delete": "Delete",
+    "confirm_delete": "You're sure you want to delete this character?",
+    "cancel": "Cancel",
+    "delete_char": "Delete",
+    "create_first": "Create first character",
+    "char_reg": "Character registration",
+    "firstname": "First name",
+    "firstname_placeholder": "Rose",
+    "lastname": "Last name",
+    "lastname_placeholder": "Scott",
+    "birthdate": "Birthdate",
+    "gender": "Gender",
+    "gender_placeholder": "Choose the gender",
+    "nationality": "Nationality",
+    "nationality_placeholder": "Choose the nationality",
+    "create_char": "Create character",
+    "male": "Male",
+    "female": "Female"
+}

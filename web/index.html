@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT Multicharacter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" style="display: none;">
+        <div id="multichar" class="panel">
+            <header class="panel-header">
+                <h1 class="panel-title">Characters</h1>
+                <button id="close-btn" class="icon-btn" title="Close"><i class="fas fa-times"></i></button>
+            </header>
+
+            <div class="character-list" id="characters"></div>
+
+            <div class="panel-footer">
+                <div id="create-new" class="create-new">
+                    <i class="fas fa-plus"></i>
+                    <span data-locale="create_first">Create</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="creation" class="panel" style="display: none;">
+            <header class="panel-header">
+                <h1 class="panel-title" data-locale="char_reg">Create</h1>
+                <button id="back-btn" class="icon-btn" title="Back"><i class="fas fa-arrow-left"></i></button>
+            </header>
+            <div class="creation-form">
+                <div class="form-group">
+                    <label data-locale="firstname">First Name</label>
+                    <input type="text" id="firstname" data-locale-placeholder="firstname_placeholder">
+                </div>
+                <div class="form-group">
+                    <label data-locale="lastname">Last Name</label>
+                    <input type="text" id="lastname" data-locale-placeholder="lastname_placeholder">
+                </div>
+                <div class="form-group">
+                    <label data-locale="nationality">Nationality</label>
+                    <select id="nationality" data-locale-placeholder="nationality_placeholder"></select>
+                </div>
+                <div class="form-group">
+                    <label data-locale="gender">Gender</label>
+                    <select id="gender">
+                        <option value="0" data-locale="male">Male</option>
+                        <option value="1" data-locale="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label data-locale="birthdate">Birth Date</label>
+                    <input type="date" id="birthdate">
+                </div>
+                <div class="buttons">
+                    <button class="button" id="create" data-locale="create_char">Create</button>
+                    <button class="button danger" id="cancel" data-locale="cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
