@@ -83,7 +83,7 @@ RegisterNuiCallback('spawnChar', function(data)
         spawnSelector(data.citizenid)
     end
     if Config.hideRadar then DisplayRadar(true) end
-    exports.devx_hud:visible(true) -- Show HUD when spawning
+    
     destroyPreviewCam()
 end)
 
@@ -122,7 +122,6 @@ RegisterNetEvent('corex_multicharacter:client:chooseChar', function()
     SetEntityCoords(PlayerPedId(), randomLocation.hiddenCoords.x, randomLocation.hiddenCoords.y, randomLocation.hiddenCoords.z, true, false, false, false)
     Wait(1500)
     if Config.hideRadar then DisplayRadar(false) end
-    exports.devx_hud:visible(false) -- Hide HUD in character selection
     loadMultichar()
     return
 end)
